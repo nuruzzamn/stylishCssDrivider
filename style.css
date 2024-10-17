@@ -188,7 +188,7 @@ body {
 .gradient {
   align-items: stretch;
   margin: 1em 0;
-  height: 1em;
+  height: 2em;
   line-height: 2em;
   color: white;
   background: black;
@@ -208,7 +208,7 @@ body {
   align-items: center;
   background: hsl(50, 100%, 50%);
   color: black;
-  height: 1em;
+  height: 2em;
   line-height: 2em;
 
   &:before,
@@ -218,4 +218,581 @@ body {
     height: 0;
     transform: rotate(45deg);
   }
+}
+
+/* style 1 5 */
+
+.astrodividermask {
+  margin-top: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.astrodividermask:after {
+  content: "";
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px / 12px;
+  box-shadow: 0 0 8px #049372;
+}
+
+.divider span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -25px;
+  left: 50%;
+  margin-left: -25px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #4fb39c; /* Tint 3 of main color */
+  background: #fff;
+}
+.divider i {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border-radius: 100%;
+  border: 1px dashed #68beaa; /* Tint 4 of main color */
+  text-align: center;
+  line-height: 40px;
+  font-style: normal;
+  color: #049372; /* main color */
+}
+
+/* style  16 */
+/* Aesthetic Styles */
+
+.container {
+  margin: 10px auto;
+}
+
+/* The Pinline itself */
+h2.pinline {
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  font-size: 1em;
+  font-weight: 100;
+  margin: 20px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2.pinline span {
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+
+h2.pinline span:before,
+h2.pinline span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background: #000;
+  width: 99999px;
+}
+
+h2.pinline span:before {
+  left: 100%;
+  margin-left: 20px;
+}
+
+h2.pinline span:after {
+  right: 100%;
+  margin-right: 20px;
+}
+
+/* style 17 */
+.fancy {
+  --b: 6px; /* control the border thickness */
+  --w: 80px; /* control the width of the line*/
+  --g: 15px; /* control the gap */
+  --c: #0b486b;
+
+  width: fit-content;
+  padding: 0 1em;
+  line-height: 1.6em;
+  border: 1px solid;
+  color: #fff;
+  background: conic-gradient(from 45deg at left, var(--c) 25%, #0000 0) 0,
+    conic-gradient(from -135deg at right, var(--c) 25%, #0000 0) 100%;
+  background-size: 51% 100%;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-image: linear-gradient(
+      #0000 calc(50% - var(--b) / 2),
+      var(--c) 0 calc(50% + var(--b) / 2),
+      #0000 0
+    )
+    1/0 var(--w) / calc(var(--w) + var(--g));
+  margin-inline: auto;
+}
+
+p {
+  font-size: 1.3rem;
+  text-align: justify;
+  margin-inline: max(10px, 50% - 800px/2);
+}
+h1 {
+  font-size: 2.3rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+.fancy {
+  --b: 6px; /* control the border thickness */
+  --w: 80px; /* control the width of the line*/
+  --g: 15px; /* control the gap */
+  --c: #0b486b;
+
+  width: fit-content;
+  padding: 0 1em;
+  line-height: 1.6em;
+  border: 1px solid;
+  color: #fff;
+  background: conic-gradient(from 45deg at left, var(--c) 25%, #0000 0) 0,
+    conic-gradient(from -135deg at right, var(--c) 25%, #0000 0) 100%;
+  background-size: 51% 100%;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-image: linear-gradient(
+      #0000 calc(50% - var(--b) / 2),
+      var(--c) 0 calc(50% + var(--b) / 2),
+      #0000 0
+    )
+    1/0 var(--w) / calc(var(--w) + var(--g));
+  margin-inline: auto;
+}
+
+p {
+  font-size: 1.3rem;
+  text-align: justify;
+  margin-inline: max(20px, 50% - 800px/2);
+}
+h1 {
+  font-size: 2.3rem;
+  font-family: system-ui, sans-serif;
+}
+h2 {
+  font-size: 1.8rem;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+/* style20 */
+/* Divider Styles */
+.style20 {
+  margin-left: 250px;
+}
+.hrstyle20 {
+  display: none; /* Hide the hr if you're using the pseudo-elements for the line */
+}
+
+/* Style for h2 with box and centered hr */
+.centered-title {
+  display: inline-block;
+  position: relative;
+  /* margin: auto 0; */
+  padding: 5px 10px; /* Padding around the h2 text to create the box style */
+  border: 1px solid #453986; /* Box border */
+  color: #453986;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  /* text-align: center; */
+  text-transform: uppercase;
+  background-color: #fff; /* Background color for h2 */
+  /* Add width to limit the size of the h2 box */
+}
+
+.centered-title::before,
+.centered-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.centered-title::before {
+  left: -110%;
+}
+
+.centered-title::after {
+  right: -110%;
+}
+
+/* style 21 */
+.unique-divider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    #f52e62 25%,
+    transparent 25% 75%,
+    #3f517e 75%
+  );
+}
+
+.divider-text {
+  position: relative;
+  padding: 0 15px;
+  background-color: #fff; /* Creates a gap around the text */
+  font-size: 16px;
+  color: #453986;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Slight shadow for depth */
+  z-index: 1;
+}
+
+.unique-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.35); /* The main horizontal line */
+  z-index: 0;
+}
+
+.unique-divider:hover .divider-text {
+  color: #d2b48c;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* style22 */
+.fancy-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+  height: 2px;
+}
+
+.fancy-divider::before,
+.fancy-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #3f517e);
+}
+
+.fancy-divider::after {
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to left, transparent, #f52e62);
+}
+
+.fancy-text {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #453986;
+  letter-spacing: 0.1em;
+  border: 2px solid #3f517e;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.fancy-divider:hover .fancy-text {
+  transform: scale(1.1) rotate(3deg);
+  border-color: #f52e62;
+  color: #f52e62;
+}
+
+/* style23 */
+.modern-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.modern-divider::before,
+.modern-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #3f517e; /* Line color */
+  margin: 0 10px; /* Space between line and text */
+}
+
+.divider-text {
+  background: linear-gradient(
+    90deg,
+    #f52e62,
+    #453986
+  ); /* Gradient background for text */
+  padding: 8px 15px; /* Space around the text */
+  color: #fff; /* Text color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-transform: uppercase; /* Uppercase text */
+  border-radius: 20px; /* Rounded corners */
+  position: relative;
+  z-index: 1; /* Place text above lines */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect for the text box */
+}
+
+/* Add hover effect for the text */
+.gradient-divider:hover .divider-text {
+  background: #d2b48c; /* Change background to white on hover */
+  color: linear-gradient(
+    90deg,
+    #f52e62,
+    #453986
+  ); /* Change text color to gradient on hover */
+  transition: background 0s ease, color 0s ease; /* Smooth transition for hover effect */
+}
+
+/* Add a decorative effect to the lines */
+.modern-divider::before {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow for left line */
+}
+
+.modern-divider::after {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow for right line */
+}
+
+.modern-divider:hover .divider-text {
+  color: #d2b48c; /* Change text color on hover */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* style24 */
+.gradient-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.gradient-divider::before,
+.gradient-divider::after {
+  content: "";
+  flex: 1;
+  height: 2px; /* Adjust the thickness of the lines */
+  background: linear-gradient(
+    90deg,
+    #f52e62,
+    #453986
+  ); /* Gradient color for lines */
+  margin: 0 10px; /* Space between line and text */
+  border-radius: 5px; /* Slightly rounded edges for lines */
+}
+
+/* style25 */
+
+.styled-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.box {
+  background: linear-gradient(
+    135deg,
+    #f52e62,
+    #453986
+  ); /* Gradient background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 10px 20px; /* Space around the text */
+  position: relative;
+  z-index: 1; /* Ensure the box is above the lines */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect for depth */
+}
+
+.styled-divider::before,
+.styled-divider::after {
+  content: "";
+  flex: 1;
+  height: 3px; /* Thickness of the lines */
+  background: #453986; /* Solid color for the lines */
+  border-radius: 5px; /* Rounded edges for lines */
+  margin: 0 10px; /* Space between line and box */
+  position: relative;
+  z-index: 0; /* Lines are below the box */
+}
+
+.styled-divider-text {
+  color: #fff; /* White text color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  z-index: 1; /* Ensure text is above lines */
+}
+
+/* Add a hover effect for the box */
+.box:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
+  transform: scale(1.05); /* Slightly scale up on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* style26 */
+
+.style26-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.style26-box {
+  background: #ff5733; /* Vibrant orange background */
+  padding: 10px 25px; /* Padding around the text */
+  position: relative;
+  z-index: 1; /* Ensure the box is above the lines */
+  border-radius: 20px; /* Rounded corners for the box */
+  overflow: hidden; /* Contain the gradient background */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.style26-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%; /* Wider than the box */
+  height: 150%; /* Taller than the box */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 87, 51, 0.7),
+    rgba(255, 215, 0, 0.7)
+  ); /* Gradient overlay */
+  transform: translate(-50%, -50%) rotate(15deg); /* Center and tilt */
+  z-index: -1; /* Place behind the box */
+}
+
+.style26-divider::before,
+.style26-divider::after {
+  content: "";
+  flex: 1;
+  height: 4px; /* Thickness of the lines */
+  background: #353535; /* Dark color for the lines */
+  border-radius: 5px; /* Rounded edges for lines */
+  margin: 0 20px; /* Space between line and box */
+}
+
+.style26-divider-text {
+  color: #fff; /* White text color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Spacing between letters */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow for text */
+}
+
+/* style27 */
+
+.style27-wavy-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.style27-wavy-line {
+  flex: 1; /* Take up remaining space */
+  height: 6px; /* Thickness of the wave */
+  background: linear-gradient(
+    90deg,
+    rgba(0, 145, 255, 0.8),
+    rgba(0, 255, 189, 0.8)
+  ); /* Gradient color */
+  border-radius: 50px; /* Round edges for wave */
+  margin: 0 15px; /* Space around the line */
+  position: relative; /* For positioning pseudo-elements */
+}
+
+.style27-wavy-line::before,
+.style27-wavy-line::after {
+  content: "";
+  position: absolute;
+  top: -5px; /* Adjust vertical position for wave effect */
+  width: 100%;
+  height: 2px; /* Height of the wave */
+  background: inherit; /* Use the same gradient */
+  border-radius: 50px; /* Round edges for wave */
+  transform: scaleY(0.5); /* Compress the height */
+}
+
+.style27-box {
+  background: #ffffff; /* White background for the box */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 25px; /* More pronounced rounded corners */
+  position: relative; /* For layering */
+  z-index: 1; /* Ensure the box is above the lines */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.style27-divider-text {
+  color: #333; /* Dark text color */
+  font-size: 18px; /* Font size */
+  font-weight: bold; /* Bold text */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 0.5px; /* Spacing between letters */
+}
+
+/* style28 */
+.style28 h3 {
+  margin: 0;
+  display: grid;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+  grid-gap: 20px;
+  font-weight: 400;
+  font-size: 28px;
+  color: #818078;
+}
+
+.style28 h3:before,
+.style28 h3:after {
+  content: "";
+  height: 1px;
+}
+
+.style28 h3:after {
+  background: linear-gradient(to right, transparent, #818078);
+}
+
+.style28 h3:before {
+  background: linear-gradient(to right, #818078, transparent);
 }
